@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDDD5A6D1EF5FD7500477E61 /* PopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A6C1EF5FD7500477E61 /* PopUpView.m */; };
+		DDDD5A771EF5FEBD00477E61 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A701EF5FEBD00477E61 /* UIColor+Hex.m */; };
+		DDDD5A781EF5FEBD00477E61 /* UIFont+Wisdom.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A721EF5FEBD00477E61 /* UIFont+Wisdom.m */; };
+		DDDD5A791EF5FEBD00477E61 /* UIView+NJ.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A741EF5FEBD00477E61 /* UIView+NJ.m */; };
+		DDDD5A7A1EF5FEBD00477E61 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A761EF5FEBD00477E61 /* UIViewExt.m */; };
+		DDDD5A811EF6336100477E61 /* BasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A801EF6336100477E61 /* BasicTableViewCell.m */; };
+		DDDD5A841EF6337900477E61 /* BasicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A831EF6337900477E61 /* BasicModel.m */; };
+		DDDD5A871EF638AE00477E61 /* PopTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A861EF638AE00477E61 /* PopTableCell.m */; };
+		DDDD5A8A1EF63CED00477E61 /* PopModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A891EF63CED00477E61 /* PopModel.m */; };
 		DDE252E01EF3FCAC00C2A6D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE252DF1EF3FCAC00C2A6D1 /* main.m */; };
 		DDE252E31EF3FCAC00C2A6D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE252E21EF3FCAC00C2A6D1 /* AppDelegate.m */; };
 		DDE252E61EF3FCAC00C2A6D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE252E51EF3FCAC00C2A6D1 /* ViewController.m */; };
@@ -35,12 +44,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DDDD5A6B1EF5FD7500477E61 /* PopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopUpView.h; path = ../PopUpView.h; sourceTree = "<group>"; };
+		DDDD5A6C1EF5FD7500477E61 /* PopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopUpView.m; path = ../PopUpView.m; sourceTree = "<group>"; };
+		DDDD5A6F1EF5FEBD00477E61 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		DDDD5A701EF5FEBD00477E61 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		DDDD5A711EF5FEBD00477E61 /* UIFont+Wisdom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Wisdom.h"; sourceTree = "<group>"; };
+		DDDD5A721EF5FEBD00477E61 /* UIFont+Wisdom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Wisdom.m"; sourceTree = "<group>"; };
+		DDDD5A731EF5FEBD00477E61 /* UIView+NJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NJ.h"; sourceTree = "<group>"; };
+		DDDD5A741EF5FEBD00477E61 /* UIView+NJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NJ.m"; sourceTree = "<group>"; };
+		DDDD5A751EF5FEBD00477E61 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		DDDD5A761EF5FEBD00477E61 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		DDDD5A7F1EF6336100477E61 /* BasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableViewCell.h; sourceTree = "<group>"; };
+		DDDD5A801EF6336100477E61 /* BasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewCell.m; sourceTree = "<group>"; };
+		DDDD5A821EF6337900477E61 /* BasicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicModel.h; sourceTree = "<group>"; };
+		DDDD5A831EF6337900477E61 /* BasicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicModel.m; sourceTree = "<group>"; };
+		DDDD5A851EF638AE00477E61 /* PopTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTableCell.h; sourceTree = "<group>"; };
+		DDDD5A861EF638AE00477E61 /* PopTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTableCell.m; sourceTree = "<group>"; };
+		DDDD5A881EF63CED00477E61 /* PopModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopModel.h; sourceTree = "<group>"; };
+		DDDD5A891EF63CED00477E61 /* PopModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopModel.m; sourceTree = "<group>"; };
 		DDE252DB1EF3FCAC00C2A6D1 /* 弹出框.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "弹出框.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE252DF1EF3FCAC00C2A6D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DDE252E11EF3FCAC00C2A6D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DDE252E21EF3FCAC00C2A6D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DDE252E41EF3FCAC00C2A6D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDE252E51EF3FCAC00C2A6D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DDE252E41EF3FCAC00C2A6D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		DDE252E51EF3FCAC00C2A6D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		DDE252E81EF3FCAC00C2A6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDE252EA1EF3FCAC00C2A6D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDE252ED1EF3FCAD00C2A6D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +78,7 @@
 		DDE252FF1EF3FCAD00C2A6D1 /* 弹出框UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "弹出框UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE253031EF3FCAD00C2A6D1 /* ___UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___UITests.m"; sourceTree = "<group>"; };
 		DDE253051EF3FCAD00C2A6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDEDBAE91EF5F92800CB0F93 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +106,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDDD5A6E1EF5FEBD00477E61 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD5A6F1EF5FEBD00477E61 /* UIColor+Hex.h */,
+				DDDD5A701EF5FEBD00477E61 /* UIColor+Hex.m */,
+				DDDD5A711EF5FEBD00477E61 /* UIFont+Wisdom.h */,
+				DDDD5A721EF5FEBD00477E61 /* UIFont+Wisdom.m */,
+				DDDD5A731EF5FEBD00477E61 /* UIView+NJ.h */,
+				DDDD5A741EF5FEBD00477E61 /* UIView+NJ.m */,
+				DDDD5A751EF5FEBD00477E61 /* UIViewExt.h */,
+				DDDD5A761EF5FEBD00477E61 /* UIViewExt.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DDDD5A7B1EF6333900477E61 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				DDE252E41EF3FCAC00C2A6D1 /* ViewController.h */,
+				DDE252E51EF3FCAC00C2A6D1 /* ViewController.m */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		DDDD5A7C1EF6333900477E61 /* M */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD5A881EF63CED00477E61 /* PopModel.h */,
+				DDDD5A891EF63CED00477E61 /* PopModel.m */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		DDDD5A7D1EF6333900477E61 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD5A6B1EF5FD7500477E61 /* PopUpView.h */,
+				DDDD5A6C1EF5FD7500477E61 /* PopUpView.m */,
+				DDDD5A851EF638AE00477E61 /* PopTableCell.h */,
+				DDDD5A861EF638AE00477E61 /* PopTableCell.m */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		DDDD5A7E1EF6334100477E61 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				DDDD5A7F1EF6336100477E61 /* BasicTableViewCell.h */,
+				DDDD5A801EF6336100477E61 /* BasicTableViewCell.m */,
+				DDDD5A821EF6337900477E61 /* BasicModel.h */,
+				DDDD5A831EF6337900477E61 /* BasicModel.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
 		DDE252D21EF3FCAC00C2A6D1 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +184,14 @@
 		DDE252DD1EF3FCAC00C2A6D1 /* 弹出框 */ = {
 			isa = PBXGroup;
 			children = (
+				DDDD5A7E1EF6334100477E61 /* Basic */,
+				DDDD5A7B1EF6333900477E61 /* C */,
+				DDDD5A7C1EF6333900477E61 /* M */,
+				DDDD5A7D1EF6333900477E61 /* V */,
+				DDDD5A6E1EF5FEBD00477E61 /* Category */,
 				DDE252E11EF3FCAC00C2A6D1 /* AppDelegate.h */,
 				DDE252E21EF3FCAC00C2A6D1 /* AppDelegate.m */,
-				DDE252E41EF3FCAC00C2A6D1 /* ViewController.h */,
-				DDE252E51EF3FCAC00C2A6D1 /* ViewController.m */,
+				DDEDBAE91EF5F92800CB0F93 /* Header.h */,
 				DDE252E71EF3FCAC00C2A6D1 /* Main.storyboard */,
 				DDE252EA1EF3FCAC00C2A6D1 /* Assets.xcassets */,
 				DDE252EC1EF3FCAD00C2A6D1 /* LaunchScreen.storyboard */,
@@ -207,6 +294,7 @@
 				TargetAttributes = {
 					DDE252DA1EF3FCAC00C2A6D1 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = B7UQ7WHB5T;
 						ProvisioningStyle = Automatic;
 					};
 					DDE252F31EF3FCAD00C2A6D1 = {
@@ -273,9 +361,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDD5A841EF6337900477E61 /* BasicModel.m in Sources */,
+				DDDD5A8A1EF63CED00477E61 /* PopModel.m in Sources */,
+				DDDD5A7A1EF5FEBD00477E61 /* UIViewExt.m in Sources */,
+				DDDD5A871EF638AE00477E61 /* PopTableCell.m in Sources */,
+				DDDD5A811EF6336100477E61 /* BasicTableViewCell.m in Sources */,
 				DDE252E61EF3FCAC00C2A6D1 /* ViewController.m in Sources */,
+				DDDD5A771EF5FEBD00477E61 /* UIColor+Hex.m in Sources */,
+				DDDD5A6D1EF5FD7500477E61 /* PopUpView.m in Sources */,
 				DDE252E31EF3FCAC00C2A6D1 /* AppDelegate.m in Sources */,
 				DDE252E01EF3FCAC00C2A6D1 /* main.m in Sources */,
+				DDDD5A781EF5FEBD00477E61 /* UIFont+Wisdom.m in Sources */,
+				DDDD5A791EF5FEBD00477E61 /* UIView+NJ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +521,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = "弹出框/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ganZhi.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +534,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B7UQ7WHB5T;
 				INFOPLIST_FILE = "弹出框/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ganZhi.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +608,7 @@
 				DDE2530A1EF3FCAD00C2A6D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDE2530B1EF3FCAD00C2A6D1 /* Build configuration list for PBXNativeTarget "弹出框Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +617,7 @@
 				DDE2530D1EF3FCAD00C2A6D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDE2530E1EF3FCAD00C2A6D1 /* Build configuration list for PBXNativeTarget "弹出框UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +626,7 @@
 				DDE253101EF3FCAD00C2A6D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
