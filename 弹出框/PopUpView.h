@@ -10,7 +10,7 @@
 
 @interface PopUpView : UIView
 
-+ (instancetype)initWithFrame:(CGRect)frame popUpFrame:(CGRect)popFrame textArr:(NSArray *)textArr block:(void(^)(NSString *))block;
++ (instancetype)initWithFrame:(CGRect)frame textArr:(NSArray *)textArr block:(void(^)(NSString *))block;
 
 @property (nonatomic, copy) void(^sendStrBlock)(NSString *);
 

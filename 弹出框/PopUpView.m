@@ -22,12 +22,12 @@
 
 @implementation PopUpView
 
-+ (instancetype)initWithFrame:(CGRect)frame popUpFrame:(CGRect)popFrame textArr:(NSArray *)textArr block:(void (^)(NSString *))block{
++ (instancetype)initWithFrame:(CGRect)frame textArr:(NSArray *)textArr block:(void (^)(NSString *))block{
     PopUpView *popView = [[PopUpView alloc] initWithFrame:frame];
     popView.dataArr = textArr;
     popView.sendStrBlock = block;
-    [popView frame:frame popUpFrame:popFrame];
-    popView.backgroundColor = [UIColor whiteColor];
+    [popView frame:frame];
+    popView.backgroundColor = [UIColor clearColor];
     return popView;
 }
 
@@ -67,7 +67,7 @@
 //}
 
 
-- (void)frame:(CGRect)frame popUpFrame:(CGRect)popFrame{
+- (void)frame:(CGRect)frame {
     
     UIView *backView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, screenWidth, screenHight)];
     backView.backgroundColor = [UIColor clearColor];
@@ -80,8 +80,15 @@
     tap.numberOfTouchesRequired = 1;
     [backView addGestureRecognizer:tap];
     
+    CGFloat height;
+    if (_dataArr.count > 5) {
+        height = 40 * DISTENCEH * 5;
+    }else{
+        height = 40 * DISTENCEH * _dataArr.count;
+    }
     
-    UIView *showView = [[UIView alloc] initWithFrame:CGRectMake(popFrame.origin.x, popFrame.origin.y + popFrame.size.height , frame.size.width , frame.size.height )];
+    
+    UIView *showView = [[UIView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y + frame.size.height, frame.size.width, 0)];
     showView.backgroundColor = [UIColor whiteColor];
     showView.layer.borderWidth = 1;
     showView.layer.cornerRadius = 3;
@@ -90,7 +97,7 @@
     [[UIApplication sharedApplication].keyWindow addSubview:showView];
     
     
-    UITableView *popTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, showView.width, showView.height) style:UITableViewStylePlain];
+    UITableView *popTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, showView.width, 0) style:UITableViewStylePlain];
     popTable.delegate = self;
     popTable.dataSource = self;
     popTable.tableFooterView = [[UIView alloc] init];
@@ -102,6 +109,11 @@
     self.popTable = popTable;
     [showView addSubview:popTable];
     
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        showView.height = height;
+        popTable.height = height;
+    }];
 }
 
 
@@ -138,7 +150,11 @@
 
 - (void)hideView{
     //    [UIView animateWithDuration:0.3 animations:^{
-    _showView.alpha = 0;
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        _showView.height = 0;
+        _popTable.height = 0;
+    }];
     //    } completion:^(BOOL finished) {
     [self.backView removeFromSuperview];
     self.alpha = 0;

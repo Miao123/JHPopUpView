@@ -17,7 +17,7 @@
 @property (nonatomic, strong) UIButton *clickBtn;
 @property (nonatomic, strong) PopUpView *showView;
 @property (nonatomic, strong) NSMutableArray *dataArr;
-
+@property (nonatomic, strong) UIButton *choiceBtn;
 
 @end
 
@@ -62,12 +62,13 @@
     [clickBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     clickBtn.centerX = self.view.centerX;
     self.clickBtn = clickBtn;
-    [backScroll addSubview:clickBtn];
+    [self.view addSubview:clickBtn];
     
     
-    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, screenHight - 60 * DISTENCEH, screenWidth - 40, 40 * DISTENCEH)];
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, NAVGATION_ADD_STATUS_HEIGHT, screenWidth - 40, 40 * DISTENCEH)];
     textField.backgroundColor = [UIColor whiteColor];
     textField.placeholder = @"请输入你想说的话";
+    textField.textAlignment = NSTextAlignmentRight;
     textField.layer.borderColor = [UIColor grayColor].CGColor;
     textField.layer.borderWidth = 1;
     textField.layer.cornerRadius = 3;
@@ -79,18 +80,13 @@
 - (void)buttonClick:(UIButton *)sender{
     UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
     CGRect rect = [_clickBtn convertRect: _clickBtn.bounds toView:window];
-    CGFloat height;
-    if (_dataArr.count > 5) {
-        height = 40 * DISTENCEH * 5;
-    }else{
-        height = 40 * DISTENCEH * _dataArr.count;
-    }
-    PopUpView *showView = [PopUpView initWithFrame:CGRectMake(_clickBtn.left, _clickBtn.bottom, _clickBtn.width, height) popUpFrame:rect textArr:_dataArr block:^(NSString *str) {
+    PopUpView *showView = [PopUpView initWithFrame:rect textArr:_dataArr block:^(NSString *str) {
         [_clickBtn setTitle:str forState:0];
     }];
     self.showView = showView;
     [_backScroll addSubview:showView];
 }
+
 
 - (void)tap:(UITapGestureRecognizer *)tap{
      [self.view endEditing:YES];
